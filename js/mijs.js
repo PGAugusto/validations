@@ -38,4 +38,6 @@ function validacion(){
 }
 
 function resetear(id)
-    {document.getElementById(id).style.borderColor="secondary";}
+    {   document.getElementById()
+        document.getElementById(id).style.borderColor="lightgray";
+    }
