@@ -7,6 +7,7 @@ function validacion(){
     let nombre=document.getElementById('nombre');
     let apellidos=document.getElementById('apellidos');
     let email=document.getElementById('email');
+    let provincia=document.getElementById('provincia');
     
     if (apellidos.value.length==0 || /^\s+$/.test(nombre.value))
       {
@@ -29,7 +30,12 @@ function validacion(){
        document.getElementById('emailHelp').style.visibility="visible";
       }
 
-
+      if (provincia.value==0)
+      {
+       correcto=false;
+       provincia.style.borderColor="red";
+       document.getElementById('provinciaHelp').style.visibility="visible";
+      }
 
       
     return correcto;
@@ -38,6 +44,6 @@ function validacion(){
 }
 
 function resetear(id)
-    {   document.getElementById()
+    {   document.getElementById(id+'Help').style.visibility="hidden";
         document.getElementById(id).style.borderColor="lightgray";
     }

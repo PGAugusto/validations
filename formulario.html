@@ -20,25 +20,25 @@
         
                 <div class="mb-3">
                   <label for="nombre" class="form-label">Nombre: </label>
-                  <input onchange="resetear('nombre')" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+                  <input onclick="resetear('nombre')" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
                   <div id="nombreHelp" class="form-text text-danger">Nombre obligatorio</div>
                 </div>
         
                 <div class="mb-3">
                   <label for="apellidos" class="form-label">Apellidos:</label>
-                  <input type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
+                  <input onclick="resetear('apellidos')" type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
                   <div id="apellidosHelp" class="form-text text-danger">Apellidos obligatorio</div>
                 </div>
         
                 <div class="mb-3">
                   <label for="email" class="form-label">Email: </label>
-                  <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                  <input onclick="resetear('email')" type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text text-danger">Formato de correo erróneo</div>
                 </div>
         
                 <div class="mb-3">
                   <label for="provincia" class="form-label">Provincia: </label>
-                  <select class="form-select" aria-label="Default select example"
+                  <select onclick="resetear('provincia')" class="form-select" aria-label="Default select example"
                    id="provincia" name="provincia">
                     <option value="0">-- elige provincia</option>
                     <option value="29">Málaga</option>
